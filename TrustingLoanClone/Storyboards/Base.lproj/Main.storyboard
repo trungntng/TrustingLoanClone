@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Load Loan Info View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoadLoanInfoViewController" customModule="TrustingLoanClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_background" translatesAutoresizingMaskIntoConstraints="NO" id="JAm-4l-hEF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JAm-4l-hEF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bbk-AA-mXh"/>
+                            <constraint firstItem="JAm-4l-hEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FYH-eG-FEG"/>
+                            <constraint firstItem="JAm-4l-hEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QzK-6x-bxh"/>
+                            <constraint firstItem="JAm-4l-hEF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xCS-CQ-gIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="VLI-VB-2vU" kind="show" identifier="LoanInfoSegue" id="Gux-AJ-mjp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.799999999999997" y="110.19490254872565"/>
+        </scene>
+        <!--Loan Info View Controller-->
+        <scene sceneID="669-jQ-kAA">
+            <objects>
+                <viewController id="Yyq-eP-Ds5" customClass="LoanInfoViewController" customModule="TrustingLoanClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wXn-Rc-hsx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Mb0-6Y-vG9">
+                                <rect key="frame" x="137.5" y="36" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SYF-fF-IIY"/>
+                                    <constraint firstAttribute="width" constant="100" id="ae1-do-Ibw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIDV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIa-wS-bCE">
+                                <rect key="frame" x="16" y="144" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.30588235289999999" green="0.59607843140000005" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SIO-Be-MT5">
+                                <rect key="frame" x="62.5" y="190" width="250" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-SO-QrV" customClass="CycleStepView" customModule="TrustingLoanClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sgI-dj-QhY"/>
+                                            <constraint firstAttribute="width" constant="50" id="sqj-qF-Tmh"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="1"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="done" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvZ-6T-mdj">
+                                        <rect key="frame" x="50" y="24.5" width="50" height="1"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="3xw-QT-47R"/>
+                                            <constraint firstAttribute="height" constant="1" id="bOA-1Y-z4i"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krf-CT-GO3" customClass="CycleStepView" customModule="TrustingLoanClone" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UgS-ct-lC1"/>
+                                            <constraint firstAttribute="width" constant="50" id="Xp3-a7-mEZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="2"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="done" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6D-FT-Ffx">
+                                        <rect key="frame" x="150" y="24.5" width="50" height="1"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="1tz-UR-Zt6"/>
+                                            <constraint firstAttribute="width" constant="50" id="Ra6-6b-IRL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMJ-ts-37A" customClass="CycleStepView" customModule="TrustingLoanClone" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="217-bO-MNN"/>
+                                            <constraint firstAttribute="width" constant="50" id="B2i-80-79N"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="3"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="done" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4U-cI-i4N">
+                                <rect key="frame" x="40" y="248" width="95.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request a loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lr-hB-unF">
+                                <rect key="frame" x="146" y="248" width="83.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLO-8w-fic">
+                                <rect key="frame" x="256.5" y="248" width="62" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Lw-XT-uaq">
+                                <rect key="frame" x="16" y="278.5" width="343" height="304"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trinh Thanh Trung - trungntng@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-hE-fg9">
+                                <rect key="frame" x="8" y="648.5" width="359" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiS-Tn-I1T">
+                                <rect key="frame" x="16" y="590.5" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="er7-Aa-gef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Apple Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cLO-8w-fic" firstAttribute="top" secondItem="SIO-Be-MT5" secondAttribute="bottom" constant="8" id="2h0-44-ONC"/>
+                            <constraint firstItem="SIO-Be-MT5" firstAttribute="top" secondItem="OIa-wS-bCE" secondAttribute="bottom" constant="16" id="8F7-49-sa7"/>
+                            <constraint firstItem="Mb0-6Y-vG9" firstAttribute="top" secondItem="Gks-VW-Izu" secondAttribute="top" constant="16" id="8LA-p1-fej"/>
+                            <constraint firstItem="Gks-VW-Izu" firstAttribute="bottom" secondItem="MhM-hE-fg9" secondAttribute="bottom" constant="4" id="8Xr-J9-dTZ"/>
+                            <constraint firstItem="MhM-hE-fg9" firstAttribute="top" secondItem="ZiS-Tn-I1T" secondAttribute="bottom" constant="8" id="CTp-n2-3At"/>
+                            <constraint firstItem="MhM-hE-fg9" firstAttribute="leading" secondItem="Gks-VW-Izu" secondAttribute="leading" constant="8" id="CvH-F7-fmP"/>
+                            <constraint firstItem="F4U-cI-i4N" firstAttribute="centerX" secondItem="UFx-SO-QrV" secondAttribute="centerX" id="GwB-6H-2YL"/>
+                            <constraint firstItem="Mb0-6Y-vG9" firstAttribute="centerX" secondItem="wXn-Rc-hsx" secondAttribute="centerX" id="ICm-dN-MfZ"/>
+                            <constraint firstItem="0Lw-XT-uaq" firstAttribute="leading" secondItem="Gks-VW-Izu" secondAttribute="leading" constant="16" id="Njc-aU-BVG"/>
+                            <constraint firstItem="OIa-wS-bCE" firstAttribute="top" secondItem="Mb0-6Y-vG9" secondAttribute="bottom" constant="8" id="Nmh-ai-0jc"/>
+                            <constraint firstItem="Gks-VW-Izu" firstAttribute="trailing" secondItem="0Lw-XT-uaq" secondAttribute="trailing" constant="16" id="bqC-m1-YWt"/>
+                            <constraint firstItem="OIa-wS-bCE" firstAttribute="leading" secondItem="Gks-VW-Izu" secondAttribute="leading" constant="16" id="caE-Bl-Xzx"/>
+                            <constraint firstItem="cLO-8w-fic" firstAttribute="centerX" secondItem="CMJ-ts-37A" secondAttribute="centerX" id="dRT-AQ-kix"/>
+                            <constraint firstItem="Gks-VW-Izu" firstAttribute="trailing" secondItem="OIa-wS-bCE" secondAttribute="trailing" constant="16" id="gQ3-it-7FV"/>
+                            <constraint firstItem="ZiS-Tn-I1T" firstAttribute="leading" secondItem="Gks-VW-Izu" secondAttribute="leading" constant="16" id="hes-AC-A0J"/>
+                            <constraint firstItem="0Lw-XT-uaq" firstAttribute="top" secondItem="F4U-cI-i4N" secondAttribute="bottom" constant="16" id="hh9-IK-lph"/>
+                            <constraint firstItem="2Lr-hB-unF" firstAttribute="centerX" secondItem="Krf-CT-GO3" secondAttribute="centerX" id="ipx-xw-Uan"/>
+                            <constraint firstItem="SIO-Be-MT5" firstAttribute="centerX" secondItem="wXn-Rc-hsx" secondAttribute="centerX" id="l2D-jG-gL9"/>
+                            <constraint firstItem="Gks-VW-Izu" firstAttribute="trailing" secondItem="MhM-hE-fg9" secondAttribute="trailing" constant="8" id="nzl-lH-hDw"/>
+                            <constraint firstItem="F4U-cI-i4N" firstAttribute="top" secondItem="SIO-Be-MT5" secondAttribute="bottom" constant="8" id="omY-LN-xiJ"/>
+                            <constraint firstItem="ZiS-Tn-I1T" firstAttribute="top" secondItem="0Lw-XT-uaq" secondAttribute="bottom" constant="8" id="tjD-5g-Y5c"/>
+                            <constraint firstItem="Gks-VW-Izu" firstAttribute="trailing" secondItem="ZiS-Tn-I1T" secondAttribute="trailing" constant="16" id="ulb-d7-ZjM"/>
+                            <constraint firstItem="2Lr-hB-unF" firstAttribute="top" secondItem="SIO-Be-MT5" secondAttribute="bottom" constant="8" id="yTg-Hs-LkP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gks-VW-Izu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AfS-LJ-Kag"/>
+                    <connections>
+                        <outlet property="tableView" destination="0Lw-XT-uaq" id="tUm-qb-5YO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHb-hF-vS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653.5999999999999" y="109.29535232383809"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LXT-c9-hL8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="VLI-VB-2vU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9My-gD-0KZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yyq-eP-Ds5" kind="relationship" relationship="rootViewController" id="G6W-pI-2eU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mep-1I-gcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_background" width="450" height="253.5"/>
+        <image name="img_logo" width="144" height="144.72000122070312"/>
+    </resources>
+</document>
