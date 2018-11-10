@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="LoanInputCell" customModule="TrustingLoanClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cL8-v7-bnj">
+                        <rect key="frame" x="0.0" y="2" width="320" height="51.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-HC-xfE">
+                                <rect key="frame" x="0.0" y="0.0" width="4" height="51.5"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="ta4-Mq-V2L"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-Da-9up">
+                                <rect key="frame" x="12" y="0.0" width="308" height="51.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u1-sx-TVY">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="51.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MaM-HN-Twp">
+                                        <rect key="frame" x="0.0" y="51.5" width="308" height="0.0"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MaM-HN-Twp" secondAttribute="bottom" id="9Pa-at-fAQ"/>
+                                    <constraint firstItem="MaM-HN-Twp" firstAttribute="top" secondItem="1u1-sx-TVY" secondAttribute="bottom" id="VpM-u6-WCj"/>
+                                    <constraint firstItem="1u1-sx-TVY" firstAttribute="top" secondItem="Nez-Da-9up" secondAttribute="top" id="Wtl-Rb-BAA"/>
+                                    <constraint firstAttribute="trailing" secondItem="1u1-sx-TVY" secondAttribute="trailing" id="YAj-P4-U3D"/>
+                                    <constraint firstItem="MaM-HN-Twp" firstAttribute="leading" secondItem="Nez-Da-9up" secondAttribute="leading" id="dMf-nK-Bho"/>
+                                    <constraint firstItem="MaM-HN-Twp" firstAttribute="top" secondItem="1u1-sx-TVY" secondAttribute="bottom" id="kBi-mI-QrM"/>
+                                    <constraint firstItem="1u1-sx-TVY" firstAttribute="leading" secondItem="Nez-Da-9up" secondAttribute="leading" id="mGM-rL-6dV"/>
+                                    <constraint firstAttribute="trailing" secondItem="MaM-HN-Twp" secondAttribute="trailing" id="pmw-nL-V6A"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nez-Da-9up" firstAttribute="leading" secondItem="8qy-HC-xfE" secondAttribute="trailing" constant="8" id="TNz-ak-n93"/>
+                            <constraint firstAttribute="bottom" secondItem="Nez-Da-9up" secondAttribute="bottom" id="Zkt-UI-ZdU"/>
+                            <constraint firstItem="Nez-Da-9up" firstAttribute="top" secondItem="cL8-v7-bnj" secondAttribute="top" id="dYe-BV-kdB"/>
+                            <constraint firstAttribute="bottom" secondItem="8qy-HC-xfE" secondAttribute="bottom" id="daA-q0-Vs0"/>
+                            <constraint firstAttribute="trailing" secondItem="Nez-Da-9up" secondAttribute="trailing" id="ety-g6-AuT"/>
+                            <constraint firstItem="8qy-HC-xfE" firstAttribute="leading" secondItem="cL8-v7-bnj" secondAttribute="leading" id="gN3-JI-V8K"/>
+                            <constraint firstItem="8qy-HC-xfE" firstAttribute="top" secondItem="cL8-v7-bnj" secondAttribute="top" id="yq5-vS-dpl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cL8-v7-bnj" secondAttribute="bottom" constant="2" id="0kX-d5-qcN"/>
+                    <constraint firstItem="cL8-v7-bnj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Ig6-mS-Mb6"/>
+                    <constraint firstAttribute="trailing" secondItem="cL8-v7-bnj" secondAttribute="trailing" id="fAy-8b-g57"/>
+                    <constraint firstItem="cL8-v7-bnj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kJt-9R-fKd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textField" destination="MaM-HN-Twp" id="APA-49-nFi"/>
+                <outlet property="titleLabel" destination="1u1-sx-TVY" id="bWr-BD-Zy2"/>
+                <outlet property="viewSubContent" destination="cL8-v7-bnj" id="K7i-ah-5gT"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="159.22038980509745"/>
+        </tableViewCell>
+    </objects>
+</document>

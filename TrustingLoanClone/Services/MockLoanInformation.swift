@@ -25,6 +25,22 @@ class MockLoanInformation {
         
         completed(loanInfo)
     }
+    
+    static func getProvinces(completed: @escaping ([String]) -> Void) {
+        let data = [
+            "An Giang",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bà Rịa - Vũng Tàu",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước"
+        ]
+        completed(data)
+    }
 }
 
 /*
