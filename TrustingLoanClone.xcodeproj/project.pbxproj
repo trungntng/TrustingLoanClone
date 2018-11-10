@@ -22,6 +22,10 @@
 		4861C0AD218A074300B6B575 /* LoadLoanInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861C0AC218A074300B6B575 /* LoadLoanInfoViewController.swift */; };
 		4861C0AF218A096B00B6B575 /* LoanInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861C0AE218A096B00B6B575 /* LoanInfoViewController.swift */; };
 		486F6F3B21934A91002BE3C0 /* LoanInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486F6F3A21934A91002BE3C0 /* LoanInputModel.swift */; };
+		488A1E3A2196C620003657BB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 488A1E362196C620003657BB /* 1.png */; };
+		488A1E3B2196C620003657BB /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 488A1E372196C620003657BB /* 2.png */; };
+		488A1E3C2196C620003657BB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 488A1E382196C620003657BB /* 3.png */; };
+		488A1E3D2196C620003657BB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 488A1E392196C620003657BB /* 4.png */; };
 		488CBE352192C23300A8D6A0 /* LoanRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CBE342192C23300A8D6A0 /* LoanRequestViewController.swift */; };
 		488CBE382192C2F000A8D6A0 /* LoanInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CBE362192C2F000A8D6A0 /* LoanInputCell.swift */; };
 		488CBE392192C2F000A8D6A0 /* LoanInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488CBE372192C2F000A8D6A0 /* LoanInputCell.xib */; };
@@ -51,6 +55,10 @@
 		4861C0AC218A074300B6B575 /* LoadLoanInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadLoanInfoViewController.swift; sourceTree = "<group>"; };
 		4861C0AE218A096B00B6B575 /* LoanInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanInfoViewController.swift; sourceTree = "<group>"; };
 		486F6F3A21934A91002BE3C0 /* LoanInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanInputModel.swift; sourceTree = "<group>"; };
+		488A1E362196C620003657BB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		488A1E372196C620003657BB /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		488A1E382196C620003657BB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		488A1E392196C620003657BB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		488CBE342192C23300A8D6A0 /* LoanRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanRequestViewController.swift; sourceTree = "<group>"; };
 		488CBE362192C2F000A8D6A0 /* LoanInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanInputCell.swift; sourceTree = "<group>"; };
 		488CBE372192C2F000A8D6A0 /* LoanInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanInputCell.xib; sourceTree = "<group>"; };
@@ -111,6 +119,7 @@
 				4805FCBD2189C74600DBC14A /* AppDelegate.swift */,
 				4805FCC42189C74800DBC14A /* Assets.xcassets */,
 				4805FCC92189C74800DBC14A /* Info.plist */,
+				488A1E352196C604003657BB /* screenshots */,
 			);
 			path = TrustingLoanClone;
 			sourceTree = "<group>";
@@ -201,6 +210,17 @@
 				48A9301C218AEE35003B9545 /* CycleStepView.swift */,
 			);
 			path = StepCycleView;
+			sourceTree = "<group>";
+		};
+		488A1E352196C604003657BB /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				488A1E362196C620003657BB /* 1.png */,
+				488A1E372196C620003657BB /* 2.png */,
+				488A1E382196C620003657BB /* 3.png */,
+				488A1E392196C620003657BB /* 4.png */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 		488CBE2E2192C1A800A8D6A0 /* Loan Request */ = {
@@ -342,10 +362,14 @@
 			files = (
 				48C0CA4E218AB58B004DF2D5 /* HUDView.xib in Resources */,
 				4839983E218B5F5D00568EAF /* LoanInfoCell.xib in Resources */,
+				488A1E3B2196C620003657BB /* 2.png in Resources */,
+				488A1E3C2196C620003657BB /* 3.png in Resources */,
 				4805FCC82189C74800DBC14A /* LaunchScreen.storyboard in Resources */,
 				4805FCC52189C74800DBC14A /* Assets.xcassets in Resources */,
 				488CBE392192C2F000A8D6A0 /* LoanInputCell.xib in Resources */,
 				4805FCC32189C74600DBC14A /* Main.storyboard in Resources */,
+				488A1E3D2196C620003657BB /* 4.png in Resources */,
+				488A1E3A2196C620003657BB /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +582,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrustingLoanClone/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trungtrinh.TrustingLoanClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -573,7 +600,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrustingLoanClone/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trungtrinh.TrustingLoanClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
